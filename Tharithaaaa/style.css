@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: #fff7cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 95%;
+  max-width: 500px;
+  background: #fffbe6;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 213, 0, 0.4);
+  position: relative;
+}
+
+.slide {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+}
+
+.slide.active {
+  display: flex;
+}
+
+input {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  background: #ffcc00;
+  font-weight: bold;
+}
+
+.option-btn {
+  position: relative;
+  transition: transform 0.25s ease;
+}
+
+.secret {
+  display: none;
+}
+
+.highlight {
+  color: orange;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.final-message {
+  font-family: 'Segoe UI';
+}
+
+.love {
+  font-size: 1.5rem;
+  color: #e67e22;
+}
