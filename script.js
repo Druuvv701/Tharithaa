@@ -1,10 +1,6 @@
 let slides = document.querySelectorAll(".slide");
 let currentSlide = 0;
 
-/* =========================
-   SLIDE NAVIGATION
-========================= */
-
 document.querySelectorAll(".next-btn").forEach(btn => {
   btn.addEventListener("click", function () {
 
@@ -32,10 +28,6 @@ function moveNext() {
 }
 
 
-/* =========================
-   STORE OPTION ANSWERS
-========================= */
-
 document.querySelectorAll(".option-btn:not(.dodge)").forEach(btn => {
   btn.addEventListener("click", function () {
 
@@ -55,11 +47,6 @@ document.querySelectorAll(".option-btn:not(.dodge)").forEach(btn => {
 
   });
 });
-
-
-/* =========================
-   SMOOTH DODGE
-========================= */
 
 document.querySelectorAll(".dodge").forEach(btn => {
 
@@ -90,19 +77,9 @@ function dodge(btn) {
   btn.style.transform = `translate(${randomX}px, ${randomY}px)`;
 }
 
-
-/* =========================
-   SECRET BUTTON
-========================= */
-
 document.querySelector(".highlight").addEventListener("click", () => {
   document.querySelector(".secret").style.display = "inline-block";
 });
-
-
-/* =========================
-   FORM SUBMIT (NO REDIRECT)
-========================= */
 
 const form = document.getElementById("giftForm");
 
@@ -145,3 +122,4 @@ function showSuccess() {
     </div>
   `;
 }
+
